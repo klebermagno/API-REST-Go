@@ -5,3 +5,7 @@
 to run execute
 
     go run *.go
+
+to add package
+
+    dep ensure
