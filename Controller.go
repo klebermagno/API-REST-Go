@@ -1,14 +1,13 @@
 package main
 
 import (
-	"fmt"
-	"github.com/pkg/errors"
 	"encoding/json"
+	"fmt"
 	"github.com/gorilla/mux"
+	"github.com/pkg/errors"
 	"log"
 	"net/http"
 )
-
 
 func main() {
 	fmt.Println("vim-go")
@@ -23,7 +22,10 @@ func main() {
 
 }
 
-
 func healthCheck(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode("Still alive!")
+}
+
+func health(s string) string {
+	return s
 }
